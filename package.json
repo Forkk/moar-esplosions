@@ -1,0 +1,35 @@
+{
+  "name": "moar-esplosions",
+  "description": "Some silly JavaScript explosion animation thingy inspired by https://github.com/oliverseal/esplosions",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Forkk/moar-esplosions",
+  "author": {
+    "name": "Forkk",
+    "email": "forkk@forkk.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Forkk/moar-esplosions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Forkk/moar-esplosions/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Forkk/moar-esplosions/blob/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "coffee-script": "~1.7.0",
+    "grunt": "~0.4.2",
+    "grunt-coffeelint": "0.0.8",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.10.0",
+    "grunt-contrib-uglify": "~0.3.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.3.0",
+    "should": "~3.1.0"
+  },
+  "keywords": []
+}
