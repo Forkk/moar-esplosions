@@ -11,27 +11,27 @@ For full copyright and license information, please see the LICENSE file
 ###
 
 module.exports = (grunt) ->
-	fs = require("fs")
-	pkginfo = grunt.file.readJSON("package.json")
-	
-	# Project configuration
-	grunt.initConfig
-		pkg: pkginfo
+    fs = require("fs")
+    pkginfo = grunt.file.readJSON("package.json")
+    
+    # Project configuration
+    grunt.initConfig
+        pkg: pkginfo
 
-		watch:
-			uikit:
-				files: [ "src/**.coffee" ]
-				tasks: [ "coffee" ]
+        watch:
+            uikit:
+                files: [ "src/**.coffee" ]
+                tasks: [ "coffee" ]
 
-		coffee:
-			compile:
-				files: "dist/esplosions.js": "src/**.coffee"
+        coffee:
+            compile:
+                files: "dist/esplosions.js": "src/**.coffee"
 
-	# Load grunt tasks from NPM packages
-	grunt.loadNpmTasks "grunt-contrib-coffee"
-	grunt.loadNpmTasks "grunt-contrib-watch"
+    # Load grunt tasks from NPM packages
+    grunt.loadNpmTasks "grunt-contrib-coffee"
+    grunt.loadNpmTasks "grunt-contrib-watch"
 
-	# Default task.
-	grunt.registerTask "default", ["build"]
-	grunt.registerTask "build", ["coffee"]
+    # Default task.
+    grunt.registerTask "default", ["build"]
+    grunt.registerTask "build", ["coffee"]
 
