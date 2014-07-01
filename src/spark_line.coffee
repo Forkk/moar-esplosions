@@ -16,7 +16,7 @@ class window.SparkLine extends Entity
         # A fraction representing the percentage of the line's life that has elapsed.
         pcnt = @elapsed / @time
         # The line end offset as a fraction of the length.
-        pcnt_end = 1 - Math.pow(1 - pcnt, 2)
+        pcnt_end = 1 - Math.pow(1 - pcnt, 1)
         # The line start offset as a fraction of the length.
         pcnt_start = Math.pow(pcnt, 2)
 
